@@ -1,0 +1,517 @@
+:root {
+  --text-color: #1a1c20;
+  --Night-Mode-text-color: #ffffff;
+  --link-color: #271990;
+  --background-color: #322e73;
+  --button-color: #322e73;
+  --border-color: #130e60;
+  --Left-border-image: url(İmages/Sprite-0005.webp);
+  --right-border-image: url(İmages/Sprite-0006.webp);
+  --top-border-image: url(İmages/Sprite-0004.webp);
+}
+
+.lightmode
+{
+  --text-color: #ffffff;
+  --Night-Mode-text-color: #1a1c20;
+  --link-color: #1a1c20;
+   --background-color:#ffea99;  /* baa223 */
+   --button-color: #baa223;
+  --border-color: #625200;
+  --Left-border-image: url(İmages/Sprite-0005.lightmode.webp);
+  --right-border-image: url(İmages/Sprite-0006.lightmode.webp);
+  --top-border-image: url(İmages/Sprite-0004.lightmode.webp);
+}
+
+#theme-switch {
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: var(--button-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+#theme-switch svg {
+  fill: var(--Night-Mode-text-color);
+}
+
+#theme-switch svg:last-child {
+  display: none;
+}
+
+.Lightmode #theme-switch svg:first-child {
+  display: none;
+}
+
+.Lightmode #theme-switch svg:last-child{
+  display: block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background-color);
+  max-width: 1600px;
+  margin: 0 auto;
+ 
+}
+
+.Body {
+  display: flex;
+}
+
+main {
+  width: 1200px;
+  border: 5px dashed;
+  border-color: var(--border-color);
+  color: var(--Night-Mode-text-color);
+}
+
+.left-side {
+  width: 200px;
+  background-image: var(--Left-border-image);
+}
+
+.right-side {
+  width: 200px;
+  background-image: var(--right-border-image);
+}
+
+a {
+  color: var(--Night-Mode-text-color);
+  text-decoration: none;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  height: 150px;
+  background-image: var(--top-border-image);
+}
+
+nav .left a {
+  color: var(--Night-Mode-text-color);
+  font-size: 28px;
+  font-weight: 600;
+  font-family: "Pixelify Sans",sans-serif;
+}
+
+nav .right a {
+  color: var(--Night-Mode-text-color);
+  margin: 0 10px;
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+nav .right .hover {
+display: inline;
+position: relative;
+}
+
+nav .right .hover::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  background: var(--Night-Mode-text-color);
+  transition: width .2s;
+}
+
+nav .right a:hover::after {
+  width: 100%;
+}
+
+nav .right a:last-child {
+  color: var(--Night-Mode-text-color);
+  background-color: var(--button-color);
+  padding: 5px 15px;
+  border: 3px solid;
+  border-style: dashed;
+  border-radius: 5px;
+}
+
+nav .right a span {
+  margin-left: 5px;
+}
+
+/* Section:"1"-"Giriş" */
+.Giriş {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  margin: 50px 0;
+  margin-bottom: 100px;
+  gap: 40px;
+}
+
+.Giriş .text {
+  flex: 5;
+}
+
+.Giriş .text h2 {
+  font-size: 45px;
+}
+
+.Giriş .text .links {
+  margin-top: 0;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+.Giriş .text .links .link-hücresi {
+  padding-top: 20px;
+}
+
+.Giriş .text .links a {
+  padding: 5px 10px;
+  border: 2px solid var(--link-color);
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  transition:.1s ;
+}
+
+.Giriş .text .links a:hover {
+  color: var(--text-color);
+  border: 2px solid var(--text-color);
+}
+
+.Giriş .ana-resim {
+  flex: 2;
+  display: flex;
+  justify-content: right;
+}
+
+.Giriş .ana-resim img {
+  border-radius: 5%;
+  width: 350px;
+}
+
+/* Seciton="2"-"Skills" */
+.section-skills {
+  padding: 0 50px;
+  margin-bottom: 100px;
+  padding-top: 25px;
+   border-top: 5px dashed;
+  border-color: var(--border-color);
+}
+
+.section-skills h2 {
+  text-align: center;
+  font-size: 35px;
+}
+
+.section-skills .text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-skills .Hücreler {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.section-skills .Hücreler .Hücre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  width: 200px;
+  padding: 10px 20px;
+  margin: 10px;
+  border: 1.5px solid var(--border-color);
+  border-radius: 5px;
+}
+
+.section-skills .Hücreler .Hücre img {
+ width: 30px;
+ height: 30px;
+ object-fit: contain;
+ border-radius: 2px;
+}
+
+.section-skills .Hücreler .Hücre span{
+  font-size: 18px;
+}
+
+/* Section="4"-"Projects" */
+
+.Section-projects {
+   padding: 0 50px;
+  margin-bottom: 10px;
+  padding-top: 15px;
+}
+
+.Section-projects .Project-nav {
+   display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+ padding-bottom: 5px;
+}
+
+.Section-projects .Project-nav .Pn-Hücre {
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  width: 200px;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  transition:.1s ;
+}
+
+.Section-projects .Project-nav .Pn-Hücre:nth-child(2) {
+  border-color: var(--Night-Mode-text-color);
+  border-style: dashed;
+  border-radius: 5px;
+}
+
+.Section-projects .Project-nav .Pn-Hücre:hover {
+  color: var(--text-color);
+  border: 2px solid var(--text-color);
+}
+
+.Section-projects .Project-nav .Pn-Hücre span {
+  font-family: "Pixelify sans", sans-serif;
+  font-size: 25px;
+}
+
+/* Section:"4"-"Projeler"-"Tabs" */
+
+.Tables h2 {
+text-align: center;
+}
+
+.Tables section .Başlık {
+  display: flex;
+  justify-content: center;
+  font-family: "pixelify sans",sans-serif;
+  font-size: 20px;
+  border-bottom: 5px dashed;
+  border-top: 5px dashed;
+  border-color: var(--border-color);
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+/* Popup */
+.Tables .popup{
+  position: fixed;
+  top: 0; left: 0;
+  background: rgba(0, 0, 0,.9);
+height: 100%;
+width: 100%;
+z-index: 100;
+display: none;
+}
+
+.Tables .popup span {
+  position: absolute;
+  top: 0; right: 10px;
+  font-size: 40px;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.Tables .popup img{
+  position: absolute;
+  top: 50%; left:50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  object-fit: cover;
+}
+/* ------------------------- */
+
+.Tables .Fanart .içerik {
+  column-count: 4;
+  column-gap: 1rem;
+}
+
+.Tables .Fanart .içerik img {
+  width: 100%;
+  display: block;
+  flex-wrap: wrap;
+  transition: transform 0.3 ease;
+}
+
+.Tables .Fanart .içerik img:hover {
+  transform: scale(1.02);
+}
+
+/* Section:"5"-"Contact" */
+.Contact {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+.Contact h2 {
+  font-size: 35px;
+}
+
+.Contact .group {
+  display: flex;
+  gap: 50px;
+}
+
+.Contact .group .text {
+flex: 3;
+margin-top: 20px;
+}
+
+.Contact .group form {
+flex: 3;
+display: flex;
+flex-direction: column;
+}
+
+.Contact .group form input,
+.Contact .group form textarea {
+  font-family: "Poppins", sans-serif;
+  border: 2px solid var(--border-color);
+  background-color: transparent;
+  padding: 10px;
+  margin-bottom: 15px;
+  outline: none;
+  resize: none;
+}
+
+.Contact .group form button {
+  font-size: 16px;
+  font-family: "Poppins",sans-serif;
+  color: var(--Night-Mode-text-color);
+  background-color: var(--background-color);
+  border: 2px dashed var(--border-color);
+  height: 50px;
+  cursor: pointer;
+  transition: .1s;
+}
+
+
+.Contact .group form button:hover {
+  filter: brightness(.9);
+}
+/* --------------------------------------------------------- */
+@media (max-width: 850px) {
+  /* Section="1"-"Giriş" */
+.Giriş .text h2 {
+  font-size: 35px;
+}
+.Giriş .text .links {
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+}
+
+@media (max-width: 740px) {
+  /* Section="1"-"Giriş" */
+
+ nav {
+    padding: 0 20px;
+  }
+
+nav .left a {
+  font-size: 26px;
+}
+
+nav .right a {
+  margin: 0 2px;
+  font-size: 16px;
+}
+
+
+  .Giriş {
+  flex-direction: column-reverse;
+}
+
+.Giriş .ana-resim img {
+  width: 300px;
+}
+
+/* Section:"5"-"Contact" */
+
+.Contact .group {
+  flex-direction: column;
+}
+}
+
+@media (max-width: 600px) {
+  /* Navbar */
+  nav {
+    padding: 0 20px;
+  }
+
+  nav .right a {
+    font-size: 22px;
+  }
+
+  nav .right a:last-child {
+    color: var(--text-color);
+    background-color: transparent;
+    padding: 0;
+  }
+
+  nav .right a span {
+    display: none;
+  }
+
+  /* Section="1"-"Giriş" */
+  .right-side {
+    display: none;
+  }
+
+  .left-side {
+    display: none;
+  }
+  
+  .Giriş {
+    padding: 0 20px;
+  }
+
+  .Giriş .text h2 {
+    font-size: 30px;
+  }
+
+  /* Seciton="2"-"Skills" */
+  .section-skills {
+    padding: 0 20px;
+  }
+
+  .section-skills .Hücreler .Hücre span {
+    font-size: 16px;
+  }
+}
+
+/* Section:"5"-"Contact" */
+.Contact {
+  padding: 0 20px;
+}
