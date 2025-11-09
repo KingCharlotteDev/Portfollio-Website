@@ -321,7 +321,11 @@ text-align: center;
 
 /* Games */
 
-.Tables .Games  .text h3 {
+.Tables .Games .text {
+  padding-bottom: 10px;
+}
+
+.Tables .Games .text h3 {
   font-family: "Pixelify Sans", sans-serif;
   font-size: 22px;
   text-align: center;
@@ -333,6 +337,8 @@ border-color: var(--border-color);
 
 .Tables .Games .text p {
   text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .Tables .Games .Learning-curve-games h3 {
@@ -340,31 +346,26 @@ border-color: var(--border-color);
   font-size: 20px;
   text-align: center;
   margin-bottom: 5px;
-  border-bottom: 3px dashed;
+   border-bottom: 4px dashed;
+   border-top: 4px dashed;
   border-color: var(--border-color);
 }
 
-.Tables .Games .Learning-curve-games {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-
-}
 
 .Tables .Games .Learning-curve-games .Hücre {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
-  border-top: 4px dashed;
-  border-color: var(--border-color);
-  margin-top: 5px;
-  margin-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .Tables .Games .Learning-curve-games .Hücre p {
   text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
 }
 
 .Tables .Games .Learning-curve-games .Hücre img {
@@ -579,3 +580,4 @@ nav .right a {
   padding: 0 20px;
 
 }
+
