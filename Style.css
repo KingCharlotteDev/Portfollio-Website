@@ -319,6 +319,69 @@ text-align: center;
   padding-top: 10px;
 }
 
+/* Games */
+
+.Tables .Games  .text h3 {
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 22px;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-bottom: 4px dashed;
+border-color: var(--border-color);
+}
+
+.Tables .Games .text p {
+  text-align: center;
+}
+
+.Tables .Games .Learning-curve-games h3 {
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 5px;
+  border-bottom: 3px dashed;
+  border-color: var(--border-color);
+}
+
+.Tables .Games .Learning-curve-games {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+
+}
+
+.Tables .Games .Learning-curve-games .Hücre {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  border-top: 4px dashed;
+  border-color: var(--border-color);
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.Tables .Games .Learning-curve-games .Hücre p {
+  text-align: center;
+}
+
+.Tables .Games .Learning-curve-games .Hücre img {
+  width: 60%;
+  height: auto;
+  display: block;
+  flex-wrap: wrap;
+  transition: transform 0.3 ease;
+}
+
+.Tables .Games .Learning-curve-games .Hücre a {
+  font-size: large;
+  border-bottom: 3px solid;
+border-color: var(--border-color);
+color: var(--border-color);
+}
+
 /* Popup */
 .Tables .popup{
   position: fixed;
@@ -514,4 +577,5 @@ nav .right a {
 /* Section:"5"-"Contact" */
 .Contact {
   padding: 0 20px;
+
 }
