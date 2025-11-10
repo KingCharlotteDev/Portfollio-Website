@@ -352,6 +352,13 @@ border-color: var(--border-color);
   border-color: var(--border-color);
 }
 
+.Tables .Games .Learning-curve-games h3 div {
+  border-left: 4px dashed;
+  border-right: 4px dashed;
+  border-color: var(--border-color);
+  margin-left: 25%;
+  margin-right: 25%;
+}
 
 .Tables .Games .Learning-curve-games .Hücre {
   display: flex;
@@ -377,11 +384,22 @@ border-color: var(--border-color);
   transition: transform 0.3 ease;
 }
 
-.Tables .Games .Learning-curve-games .Hücre a {
-  font-size: large;
-  border-bottom: 3px solid;
-border-color: var(--border-color);
-color: var(--border-color);
+.Tables .Games .Learning-curve-games .Hücre .download-links {
+display: flex;
+gap: 10px;
+}
+
+.Tables .Games .Learning-curve-games .Hücre .download-links a {
+  display: flex;
+  gap: 5px;
+  color: var(--Night-Mode-text-color);
+}
+
+.Tables .Games .Learning-curve-games .Hücre a img {
+  width: 30px;
+ height: 30px;
+ object-fit: contain;
+ border-radius: 2px;
 }
 
 /* Popup */
